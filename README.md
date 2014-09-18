@@ -9,8 +9,10 @@ This is meant to be a simple setup so that you have someplace to push your code 
 
 Goal
 ---
- - Given you have a git repository with a leiningen clojure project.
-   And you connect it to the Vagrant as a git-remote
-   When you push your code
-   Then the server should run whatever is in your Proc-file
+```cucumber
+Given you have a git repository with a leiningen clojure project.
+And you connect it to the Vagrant as a git-remote
+When you push your code
+Then the server should run whatever is in your Proc-file
+```
 
