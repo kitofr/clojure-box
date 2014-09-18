@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -fr ../app/
+mkdir ../app/
+cd ../app
+git clone ../git current
+cd current
+(~/bin/lein ring server-headless &) &

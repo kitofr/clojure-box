@@ -16,6 +16,6 @@ Vagrant::configure("2") do |config|
     puppet.manifest_file  = "centos64-x86_64-minimal.pp"
   end
 
-  config.vm.network :forwarded_port, guest: 22, host: 22
+  config.vm.network :forwarded_port, guest: 3000, host: 3333
 
 end

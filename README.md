@@ -16,3 +16,9 @@ When you push your code
 Then the server should run whatever is in your Proc-file
 ```
 
+
+TODO
+----
+  * IPTables seems to hinder me right now
+  * SELinux as well
+  * And I don't release the 'shell' after git push
