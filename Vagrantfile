@@ -17,5 +17,4 @@ Vagrant::configure("2") do |config|
   end
 
   config.vm.network :forwarded_port, guest: 3000, host: 3333
-
 end

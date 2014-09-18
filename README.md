@@ -13,12 +13,12 @@ Goal
 Given you have a git repository with a leiningen clojure project.
 And you connect it to the Vagrant as a git-remote
 When you push your code
-Then the server should run whatever is in your Proc-file
+Then the server should do `lein compile :all`
+And start a `lein ring server-headless`
 ```
-
 
 TODO
 ----
   * IPTables seems to hinder me right now
-  * SELinux as well
-  * And I don't release the 'shell' after git push
+  * what if the server is restarted... we need to restart things
+  * we could use some kind of release/date-folder structure and then have a link to current (vlad style)

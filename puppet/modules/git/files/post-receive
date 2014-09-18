@@ -5,4 +5,5 @@ mkdir ../app/
 cd ../app
 git clone ../git current
 cd current
-~/bin/lein ring server-headless &
+~/bin/lein compile :all
+screen -S ring -d -m ~/bin/lein ring server-headless
