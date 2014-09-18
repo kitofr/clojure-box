@@ -5,4 +5,4 @@ mkdir ../app/
 cd ../app
 git clone ../git current
 cd current
-(~/bin/lein ring server-headless &) &
+~/bin/lein ring server-headless &

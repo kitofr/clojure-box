@@ -25,7 +25,7 @@ class fw::pre {
     action  => 'accept',
   }->
   firewall { '101 allow http and https access':
-    port    => [80, 443, 3000],
+    port    => [80, 443, 3000, 3333],
     proto   => 'tcp',
     action  => 'accept',
   }
